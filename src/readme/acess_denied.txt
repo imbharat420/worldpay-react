@@ -1,0 +1,43 @@
+http://support-docs.worldpay.io/support/kb/gg/paymetricassist/index.htm
+http://support-docs.worldpay.io/support/kb/gg/paymetricassist/locked_user.htm#:~:text=After%20a%20user%20makes%20six,within%20the%20last%2030%20minutes.
+
+
+
+The error "Access to the requested resource has been denied" in Worldpay can indicate issues with authentication, permissions, or configuration, including invalid credentials, incorrect firewall settings, or missing required parameters in the request. 
+Here's a breakdown of potential causes and troubleshooting steps:
+Possible Causes:
+Authentication Issues:
+Incorrect Credentials: You might be using the wrong username or password. 
+Invalid STS Credentials: If using the Security Token Service, the authentication might be invalid. 
+Merchant Authentication Rejected: The merchant's authentication might have been rejected. 
+Locked User: After multiple failed login attempts, your account might be locked. 
+Permissions Issues:
+Insufficient Permissions: You might not have the necessary permissions to access the requested resource. 
+Missing Roles: You might be missing required roles within the Worldpay system. 
+Configuration Problems:
+Invalid Configuration: The merchant configuration might be invalid or malformed. 
+Missing Parameters: The request might be missing required parameters or values, or it might be malformed. 
+Invalid URL: The URL might contain invalid values. 
+Network and Firewall Issues:
+Firewall Blocking Traffic: Your firewall might be blocking inbound or outbound traffic from Worldpay. 
+Incorrect Webhook Destination: The webhook destination URL might not be using HTTPS or have a certificate signed by a trusted authority. 
+IP Whitelisting: Ensure you are using DNS whitelisting and not explicit IP whitelisting for your firewall. 
+Other Potential Issues:
+Payment Refusal: The payment attempt might have been refused by the financial institution. 
+Card Issues: The card might be expired, have insufficient balance, or have restrictions preventing approval. 
+Fraud Detection: The transaction might have been declined due to fraud detection services. 
+Troubleshooting Steps:
+Verify Credentials:
+Ensure you are using the correct username and password. 
+Check Permissions:
+Confirm you have the necessary permissions to access the requested resource. 
+Review Configuration:
+Ensure your merchant configuration is valid and that all required parameters are included in the request. 
+Check Firewall Settings:
+Verify that your firewall allows inbound and outbound traffic from Worldpay domains (e.g., https://try.access.worldpay.com/ and https://access.worldpay.com/). 
+Examine Webhook Destination:
+Ensure your webhook destination URL uses HTTPS and has a valid certificate. 
+Consult Worldpay Documentation:
+Refer to the Worldpay documentation for specific error codes and troubleshooting steps. 
+Contact Worldpay Support:
+If you are unable to resolve the issue, contact Worldpay support for assistance. 
